@@ -7,12 +7,12 @@
     padding: 0;
     border: 0;
 }
-@media (min-width: 768px) {
+
 body{
     background-color: #F5EFDA ;
     font-family: sans-serif;
 }
-}
+
 header{
     display: flex;
     background-color: #FDFBF7;
@@ -66,16 +66,18 @@ h1{
     display: flex;
     font-family: "Inria Sans", sans-serif;
     color: #867331;
+    margin: 2%;
+    padding: 5 ;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 60px;
 }
+
 .contenedor {
     display: flex;
     }
     
-
-
     nav {
         justify-content: center;
         align-items: center; /* Alinea verticalmente */
@@ -164,8 +166,26 @@ h1{
     }
     
     /* Estilo para los contenedores de cada sección */
-    .diseno-contenedor1 div, .diseno-contenedor2 div {
-        text-align: center;
+    .diseno-contenedor1 div {
+        
+        background-image: url("../imagenes/homenuestrosproductos.jpg");
+        height: 320px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .diseno-contenedor2 div {
+       
+        background-image: url("../imagenes/hometalleresycomunidad.jpg");
+        height: 320px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .diseno-contenedor1 img, .diseno-contenedor2 img {
@@ -191,13 +211,11 @@ h1{
     }
     
 
-
-
-
-
-
-
-
+    .catalogo {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
 
     
     .producto {
@@ -276,6 +294,13 @@ h1{
         color: #6b5c28;
       }
 
+      .actividad img {
+        width: 300px;
+        height: 200px;
+        object-fit: contain;
+
+      }
+
 
       .sobrenosotros {
         border-radius: 5px;
@@ -288,6 +313,283 @@ h1{
       }
    
 
+     /* Contenedor principal del formulario de login */
+.login-container {
+
+  padding: 20px;
+margin: 10px;
+  width: 400px;
+  display: flex; /* Usamos flexbox para el centrado */
+  flex-direction: column; /* Organiza los elementos de arriba a abajo */
+  justify-content: center; /* Alinea los elementos verticalmente al centro */
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+    
+  }
+  
+  /* Estilo para el título en <p> */
+  p.title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #6b5c28;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold;
+    text-align: center
+  }
+  
+  /* Estilos para los campos de entrada */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo del botón de inicio de sesión */
+  .button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background-color: #84aba0;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Efecto de hover en el botón */
+  .button:hover {
+    background-color: #549c87;
+  }
+  
+  /* Estilo para el enlace "Crear cuenta" */
+  .link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Efecto de hover en el enlace */
+  .link:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+  /* Contenedor principal del carrito */
+.cart-container {
+   
+    width: 100%;              /* El contenedor se adapta al 100% del ancho disponible */
+    max-width: 1000px;        /* Ancho máximo para evitar que se agrande demasiado */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+  }
+  
+  /* Título del carrito usando p */
+  .cart-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Inria Sans", sans-serif;
+    color: #6b5c28;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para cada item del carrito */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+ 
+  }
+  
+  /* Contenedor de la imagen del producto */
+  .product-image img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Información del producto */
+  .product-info {
+    flex-grow: 1;
+    padding-left: 30px;
+  }
+  
+  .product-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Sección de cantidad */
+  .quantity {
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+    font-family: "Inria Sans", sans-serif;
+  }
+  
+  .quantity input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  /* Botón para eliminar producto */
+  .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+  top: 20px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Total del producto */
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transform: translateY(30px);
+   
+  }
+  
+  /* Estilos de los botones de acción */
+  .cart-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 16px 25px;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .cart-actions button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .checkout-btn {
+    background-color: #54897a;
+    color: white;
+    
+  }
+  
+  .checkout-btn:hover {
+    background-color: #54897a;
+  }
+
+
+
+
+  /* Estilo del botón de robot con imagen */
+.robot-button {
+    position: fixed;
+    bottom: 20px;           /* El botón se posiciona 20px desde la parte inferior de la pantalla */
+    right: 20px;            /* El botón se posiciona 20px desde el lado derecho de la pantalla */
+    background-color: #549c87;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    width: 60px;            /* Tamaño del botón */
+    height: 60px;           /* Tamaño del botón */
+  }
+  
+  .robot-button img {
+    width: 40px;  /* Ajusta el tamaño de la imagen */
+    height: 40px; /* Ajusta el tamaño de la imagen */
+  }
+  
+  .robot-button:hover {
+    background-color: #549c87; /* Cambio de color al pasar el ratón sobre el botón */
+  }
+  
+  /* Estilo del popup */
+  .popup {
+    display: none;  /* El popup está oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenido del popup */
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botón de cerrar (X) del popup */
+  .close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close-btn:hover {
+    color: #e74c3c; /* Cambio de color cuando el cursor está sobre la X */
+  }
+
+
+
+
+
+
+
     footer {
 
         display: flex;
@@ -295,6 +597,7 @@ h1{
         align-items: center;
         margin-top: 30px;
         margin-bottom: 30px;
+    
     }
 
     footer div img {
@@ -322,4 +625,151 @@ h1{
     
     .social ul li {
         margin: 0 10px; /* Espaciado entre los elementos de la lista */
+    }
+
+
+/* Media Query para pantallas grandes (tablets) */
+    @media screen and (min-width: 768px) {
+        
+        img{
+            max-width: 100%;
+        }
+
+        #logo{
+            width: 100%;
+            height: auto;
+        }
+       
+        #logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        .diseno-contenedor1 div {
+        
+            background-image: url("../imagenes/homenuestrosproductos.jpg");
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+    
+        .diseno-contenedor2 div {
+           
+            background-image: url("../imagenes/hometalleresycomunidad.jpg");
+            height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .diseno-contenedor1 img, .diseno-contenedor2 img {
+            max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+            height: auto;
+            border-radius: 10px; /* Da bordes redondeados a las imágenes */
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; /* Permite mover la imagen dentro del contenedor */
+            top: 10%;           /* Mueve la imagen verticalmente al 50% del contenedor */
+            left: 10%;          /* Mueve la imagen horizontalmente al 50% del contenedor */
+            transform: translate(-50%, -50%); /* Ajusta la imagen para que esté centrada */
+        }
+        
+        .catalogo {
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+        }
+        
+        
+        .catalogo2 img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .sobrenosotros {
+          border-radius: 5px;
+          margin: 5px;
+          padding: 5px;
+          width: 400px;
+          text-align: center; /* Asegura que el texto dentro del div esté centrado */
+       
+          display: flex; /* Activa el layout Flexbox en el contenedor */
+          flex-direction: column; /* Alinea los elementos de arriba hacia abajo (verticalmente) */
+          justify-content: center; /* Centra los elementos en el eje vertical */
+          align-items: center; /* Centra los elementos en el eje horizontal */
+      }
+
+      .login-container {
+
+        padding: 40px;
+        margin: 20px;
+        width: 720px;
+        display: flex; /* Usamos flexbox para el centrado */
+        flex-direction: column; /* Organiza los elementos de arriba a abajo */
+        justify-content: center; /* Alinea los elementos verticalmente al centro */
+        align-items: center; /* Alinea los elementos horizontalmente al centro */
+        height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+        }
+    
+    }
+
+    @media screen and (min-width: 1280px) {
+
+      .diseno-contenedor1 div {
+        height: 600px;
+    }
+
+    .diseno-contenedor2 div {
+        height: 600px;
+    }
+    
+    .hero video {
+      height: 800px;
+  }
+  .catalogo {
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+  .sobrenosotros {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+    display: flex; /* Activa el layout Flexbox en el contenedor */
+   flex-direction: column; /* Alinea los elementos de arriba hacia abajo (verticalmente) */
+    justify-content: center; /* Centra los elementos en el eje vertical */
+    align-items: center;
+  }
+
+  .login-container {
+    width: 1000px;
+    }
+
+    .cart-actions button {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     }
