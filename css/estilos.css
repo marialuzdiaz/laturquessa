@@ -1,0 +1,325 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@media (min-width: 768px) {
+body{
+    background-color: #F5EFDA ;
+    font-family: sans-serif;
+}
+}
+header{
+    display: flex;
+    background-color: #FDFBF7;
+    padding: 1em;
+    font-family: "Inria Sans", sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; /* Asegúrate de que nada se salga del contenedor */
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 700px;
+    z-index: 1; /* Coloca el video detrás del contenido */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+.overlay {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima del video */
+    color: white; /* Cambia el color del texto para que sea legible sobre el video */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Agrega un poco de espacio alrededor */
+}
+
+
+img{
+    max-width: 100%;
+}
+#logo{
+    width: 70%;
+    
+}
+a{
+    text-decoration: none;
+    color: #867331
+}
+li{
+    list-style: none;
+}
+h1{ 
+    display: flex;
+    font-family: "Inria Sans", sans-serif;
+    color: #867331;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.contenedor {
+    display: flex;
+    }
+    
+
+
+    nav {
+        justify-content: center;
+        align-items: center; /* Alinea verticalmente */
+    }
+    
+    nav ul {
+        display: flex; /* Hace que los elementos de la lista se alineen en fila */
+        padding: 1.0em; /* Elimina el padding por defecto */
+        margin: 0; /* Elimina el margin por defecto */
+        list-style-type: none; /* Elimina los puntos de la lista */
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.75em;
+    }
+    
+    nav ul li {
+        margin: 0 15px; /* Espacio entre los elementos */
+    }
+
+    nav ul li :hover {
+
+        color: #9DC5B9;
+    }
+    
+    .icono-1 {
+
+        height: 30px;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .icono-2 {
+
+        height: 30px;
+        width: auto;
+       
+        
+    }
+
+    main figure {
+
+        width: 100%;
+    }
+
+
+
+    section diseno-contenedor1{
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        margin: 20px 0;
+        width: 100%;
+        height: 400px;
+        background-image: url(/imagenes/homenuestrosproductos.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        
+    }
+
+    .diseno-contenedor1 div a {
+        color: #F5EFDA;
+        background-color: #8673319e;
+        padding: 10px 20px 10px 20px;
+        border-radius: 40px;
+        font-family: "Inria Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .diseno-contenedor1 div a:hover {
+        background-color: #867331 ;
+    }
+
+    .diseno-contenedor2 div a {
+        color: #F5EFDA;
+        background-color: #8673319e;
+        padding: 10px 20px 10px 20px;
+        border-radius: 40px;
+        font-family: "Inria Sans", sans-serif;
+        font-size: 20px;
+    }
+
+    .diseno-contenedor2 div a:hover {
+        background-color: #867331 ;
+    }
+    
+    /* Estilo para los contenedores de cada sección */
+    .diseno-contenedor1 div, .diseno-contenedor2 div {
+        text-align: center;
+    }
+    
+    .diseno-contenedor1 img, .diseno-contenedor2 img {
+        max-width: 100%; /* Asegura que las imágenes no superen el ancho del contenedor */
+        height: auto;
+        border-radius: 10px; /* Da bordes redondeados a las imágenes */
+        margin-bottom: 10px;
+    }
+    
+    /* Estilo para los enlaces */
+    .diseno-contenedor1 a, .diseno-contenedor2 a {
+        text-decoration: none; /* Quita el subrayado de los enlaces */
+        color: #333; /* Color del texto */
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+        transition: color 0.3s; /* Transición de color */
+    }
+    
+    .diseno-contenedor1 a:hover, .diseno-contenedor2 a:hover {
+        color: #ffffff; /* Cambia el color del texto al pasar el ratón */
+    }
+    
+
+
+
+
+
+
+
+
+
+    
+    .producto {
+    
+        border-radius: 5px;
+        margin: 5px;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+        font-family: "Inria Sans", sans-serif;
+        color: #6b5c28;
+       
+    }
+    
+    .producto img {
+        width: 170px;
+        height: 170px;
+        object-fit: contain;
+        
+    }
+    
+    .precio {
+        font-size: 1.0em;
+        font-family: "Inria Sans", sans-serif; ;
+        color: #93883b;
+        margin: 10px 0;
+    }
+    
+    .comprar {
+        display: inline-block;
+        background-color: #867331;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .comprar:hover {
+        background-color: #af9e5e;
+    }
+    
+    .text-section {
+        max-width: 900px; /* Ajusta el ancho de la sección */
+        margin: auto;
+        padding: 20px;
+        
+      }
+      
+      /* Párrafo principal destacado */
+      .text-section .highlight {
+        font-size: 1.7em; 
+        font-family: "Inria Sans", sans-serif; 
+        color: #84aba0; 
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      /* Descripción adicional */
+      .text-section .description {
+        font-size: 1.0em;
+        color: #867331;
+        font-family: "Inria Sans", sans-serif; 
+        text-align: center;
+        margin-bottom: 2px;
+        text-align: center;
+      }
+      
+      
+      .actividad {
+        border-radius: 5px;
+        margin: 5px;
+        padding: 15px;
+        width: 400px;
+        text-align: center;
+        font-family: "Inria Sans", sans-serif;
+        color: #6b5c28;
+      }
+
+
+      .sobrenosotros {
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+        width: 400px;
+        text-align: center;
+        font-family: "Inria Sans", sans-serif;
+        color: #6b5c28;
+      }
+   
+
+    footer {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer div img {
+
+        width: 120px;
+        height: auto;
+    }
+
+    footer li{
+
+        margin: 5px;
+    }
+
+    .social {
+        display: flex; /* Habilita el layout flex para el contenedor */
+        width: 100px; /* Ajusta el ancho según sea necesario */
+    }
+    
+    .social ul {
+        display: flex; /* Habilita el layout flex para la lista */
+        padding: 0; /* Elimina el padding por defecto */
+        margin: 0; /* Elimina el margin por defecto */
+        list-style-type: none; /* Elimina los puntos de la lista */
+    }
+    
+    .social ul li {
+        margin: 0 10px; /* Espaciado entre los elementos de la lista */
+    }
